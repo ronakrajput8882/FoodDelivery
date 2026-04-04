@@ -1,4 +1,4 @@
-# FoodDelivery<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=2,12,24&height=200&section=header&text=🍔%20FoodDelivery&fontSize=52&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Full-Stack%20Food%20Ordering%20Platform%20|%20React%20+%20Node.js%20+%20MongoDB&descAlignY=60&descAlign=50" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=2,12,24&height=200&section=header&text=🍔%20FoodDelivery&fontSize=52&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Full-Stack%20Food%20Ordering%20Platform%20|%20React%20+%20Node.js%20+%20MongoDB&descAlignY=60&descAlign=50" width="100%"/>
 
 <div align="center">
 
