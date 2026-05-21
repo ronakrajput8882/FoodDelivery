@@ -2,10 +2,8 @@ import subprocess
 import os
 from datetime import datetime
 
-# ── Config ──────────────────────────────────────────────────────────────────
 COMMITS = [
-    # (date_str, hour, minute, message)
-    # ── Yesterday  17 May 2026  →  6 commits ────────────────────────────────
+    
     ("2026-05-21", 10, 15, "feat: add data preprocessing pipeline"),
     ("2026-05-21", 11, 42, "feat: implement feature engineering module"),
     ("2026-05-21", 13, 20, "fix: resolve null handling in dataset loader"),
@@ -13,7 +11,6 @@ COMMITS = [
     ("2026-05-21", 17, 33, "docs: update README with usage instructions"),
     ("2026-05-21", 19, 50, "chore: add requirements.txt and .gitignore"),
 
-    # ── Today  18 May 2026  →  7 commits ────────────────────────────────────
     ("2026-05-21", 9,  10, "feat: add model evaluation metrics"),
     ("2026-05-21", 10, 45, "feat: implement cross-validation logic"),
     ("2026-05-21", 12, 30, "fix: correct label encoding for categorical vars"),
@@ -23,9 +20,9 @@ COMMITS = [
     ("2026-05-21", 19, 40, "chore: update .gitignore and project structure"),
 ]
 
-LOG_FILE = "commit_log.txt"  # dummy file that gets modified each commit
+LOG_FILE = "commit_log.txt" 
 
-# ── Helper ───────────────────────────────────────────────────────────────────
+
 def run(cmd: list[str], env=None):
     result = subprocess.run(cmd, capture_output=True, text=True, env=env)
     if result.returncode != 0:
@@ -35,7 +32,6 @@ def run(cmd: list[str], env=None):
 def make_commit(date: str, hour: int, minute: int, message: str, index: int):
     timestamp = f"{date}T{hour:02d}:{minute:02d}:00"
 
-    # Touch / modify the log file so there's always something to stage
     with open(LOG_FILE, "a") as f:
         f.write(f"[{timestamp}] commit #{index}: {message}\n")
 
@@ -49,9 +45,7 @@ def make_commit(date: str, hour: int, minute: int, message: str, index: int):
     status = "✓" if result.returncode == 0 else "✗"
     print(f"  {status}  [{timestamp}]  {message}")
 
-# ── Main ─────────────────────────────────────────────────────────────────────
 def main():
-    # Verify we're inside a git repo
     check = subprocess.run(["git", "rev-parse", "--is-inside-work-tree"],
                            capture_output=True, text=True)
     if check.returncode != 0:
@@ -74,7 +68,6 @@ def main():
     print("  git log --oneline -15")
     print("=" * 60)
 
-    # Show last 15 commits for verification
     log = subprocess.run(["git", "log", "--oneline", "-15"],
                          capture_output=True, text=True)
     print(log.stdout)
