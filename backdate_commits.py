@@ -4,20 +4,20 @@ from datetime import datetime
 
 COMMITS = [
     
-    ("2026-05-21", 10, 15, "feat: add data preprocessing pipeline"),
-    ("2026-05-21", 11, 42, "feat: implement feature engineering module"),
-    ("2026-05-21", 13, 20, "fix: resolve null handling in dataset loader"),
-    ("2026-05-21", 15, 5,  "refactor: clean up model training script"),
-    ("2026-05-21", 17, 33, "docs: update README with usage instructions"),
-    ("2026-05-21", 19, 50, "chore: add requirements.txt and .gitignore"),
+    ("2026-05-27", 10, 15, "feat: add data preprocessing pipeline"),
+    ("2026-05-27", 11, 42, "feat: implement feature engineering module"),
+    ("2026-05-27", 13, 20, "fix: resolve null handling in dataset loader"),
+    ("2026-05-27", 15, 5,  "refactor: clean up model training script"),
+    ("2026-05-27", 17, 33, "docs: update README with usage instructions"),
+    ("2026-05-27", 19, 50, "chore: add requirements.txt and .gitignore"),
 
-    ("2026-05-21", 9,  10, "feat: add model evaluation metrics"),
-    ("2026-05-21", 10, 45, "feat: implement cross-validation logic"),
-    ("2026-05-21", 12, 30, "fix: correct label encoding for categorical vars"),
-    ("2026-05-21", 14, 15, "refactor: modularise training and inference code"),
-    ("2026-05-21", 15, 55, "test: add unit tests for data pipeline"),
-    ("2026-05-21", 17, 20, "docs: add model architecture explanation"),
-    ("2026-05-21", 19, 40, "chore: update .gitignore and project structure"),
+    ("2026-05-27", 9,  10, "feat: add model evaluation metrics"),
+    ("2026-05-27", 10, 45, "feat: implement cross-validation logic"),
+    ("2026-05-27", 12, 30, "fix: correct label encoding for categorical vars"),
+    ("2026-05-27", 14, 15, "refactor: modularise training and inference code"),
+    ("2026-05-27", 15, 55, "test: add unit tests for data pipeline"),
+    ("2026-05-27", 17, 20, "docs: add model architecture explanation"),
+    ("2026-05-27", 19, 40, "chore: update .gitignore and project structure"),
 ]
 
 LOG_FILE = "commit_log.txt" 
